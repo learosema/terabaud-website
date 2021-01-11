@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background: #213;
+  color: #fff;
+}
+
+a {
+  color: deepskyblue;
+}
