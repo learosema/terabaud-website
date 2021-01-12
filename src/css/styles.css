@@ -166,8 +166,7 @@ header a:hover {
 
 header svg {
   stroke: #fff;
-  fill: #fff;
-  fill-opacity: 0.5;
+  fill: none;
   width: 100px;
   height: 100px;
 }
