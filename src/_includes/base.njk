@@ -9,7 +9,8 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <main>
+    {% include 'header.njk' %}
+    <main id="#main-content" tabindex="-1">
       {% block content %}
         {{content | safe }}
       {% endblock %}

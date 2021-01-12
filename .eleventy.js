@@ -3,6 +3,8 @@ module.exports = (config) => {
   config.addPassthroughCopy('./src/js/');
   config.addPassthroughCopy('./src/css/');
 
+  config.addFilter('json', (str) => JSON.stringify(str));
+
   return {
     dir: {
       input: 'src',
