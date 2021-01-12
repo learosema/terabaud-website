@@ -187,3 +187,14 @@ header svg {
     display: none;
   }
 }
+
+/* Hide scrollbars in windows */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox (not sure if that works) */
+}
