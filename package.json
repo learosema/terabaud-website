@@ -6,12 +6,16 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
+    "predeploy": "cross-env ELEVENTY_ENV=production npm run build -s",
+    "deploy": "touch public/.nojekyll && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^3.1.0"
   }
 }
