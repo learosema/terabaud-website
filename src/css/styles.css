@@ -171,19 +171,19 @@ header svg {
   height: 100px;
 }
 
-/* Weird Demo ****************************************************/
+/* Wild Demo ****************************************************/
 
-.weird-demo {
+.wild-demo {
   display: block;
   width: 100%;
 }
 
-.weird-demo circle {
+.wild-demo circle {
   fill: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .weird-demo {
+  .wild-demo {
     display: none;
   }
 }

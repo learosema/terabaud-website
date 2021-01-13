@@ -19,7 +19,7 @@ const data = Array(33)
   .fill(0)
   .map((_, i) => randomCircle(i));
 
-const svg = d3.select('svg.weird-demo');
+const svg = d3.select('svg.wild-demo');
 
 const circle = svg.selectAll('circle').data(data, (d) => d.id);
 
