@@ -1,0 +1,10 @@
+---
+title: Blog
+layout: article
+---
+
+<h1>Blog</h1>
+
+<ul>{% for post in collections.posts %}<li>
+  <a href="{{ site.url }}{{ post.url }}">{{ post.date }}: {{ post.data.title }}</a>
+</li>{% endfor %}</ul>
