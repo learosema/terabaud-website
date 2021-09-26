@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "type": "module",
   "scripts": {
-    "dev": "npx gulp && concurrently 'npx gulp watch' 'npx eleventy --config=.eleventy.cjs --serve --quiet'",
+    "dev": "npx gulp && concurrently 'gulp watch' 'eleventy --config=.eleventy.cjs --serve --quiet'",
     "start": "npm run dev",
     "build": "cross-env NODE_ENV=production gulp && cross-env NODE_ENV=production eleventy --config=.eleventy.cjs"
   },
@@ -16,6 +16,7 @@
     "@11ty/eleventy": "^0.12.1",
     "autoprefixer": "^10.3.6",
     "clean-css": "^5.2.0",
+    "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
     "get-google-fonts": "^1.2.2",
     "gulp": "^4.0.2",
