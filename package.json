@@ -14,6 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
     "autoprefixer": "^10.3.6",
     "clean-css": "^5.2.0",
     "concurrently": "^6.2.1",
@@ -26,6 +27,7 @@
     "gulp-postcss": "^9.0.1",
     "html-minifier": "^4.0.0",
     "imagemin": "^8.0.1",
+    "moment": "^2.29.1",
     "postcss": "^8.3.8",
     "postcss-css-variables": "^0.18.0",
     "postcss-import": "^14.0.2"

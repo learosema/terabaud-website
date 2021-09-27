@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 
 // Pull in each task
-// import fonts from './tasks/fonts.js';
+import fonts from './tasks/fonts.js';
 import images from './tasks/images.js';
 // import esbuild from './tasks/esbuild.js';
 import postCSS from './tasks/postcss.js';
@@ -14,7 +14,7 @@ const { parallel, watch } = gulp;
 // will run when a file changes.
 
 const watcher = () => {
-  // watch('./src/images/**/*', { ignoreInitial: true }, images);
+  watch('./src/images/**/*', { ignoreInitial: true }, images);
   watch(
     ['./src/css/*.css', './src/css/**/*.css'],
     { ignoreInitial: true },
@@ -28,7 +28,7 @@ const watcher = () => {
 };
 
 // The default (if someone just runs `gulp`) is to run each task in parrallel
-export default parallel(images, postCSS);
+export default parallel(fonts, images, postCSS);
 
 // This is our watcher task that instructs gulp to watch directories and
 // act accordingly
