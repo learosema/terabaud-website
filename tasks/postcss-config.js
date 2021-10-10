@@ -1,14 +1,16 @@
 import postcssImport from 'postcss-import';
 import autoprefixer from 'autoprefixer';
-import postcssCssVars from 'postcss-css-variables';
+import postcssCustomProperties from 'postcss-custom-properties';
 
 import path from 'path';
-const __dirname = path.resolve();
+const currentWorkingDir = path.resolve();
 
 export default {
   plugins: [
-    postcssImport({ root: __dirname }),
-    postcssCssVars(),
+    postcssImport({ root: currentWorkingDir }),
+    postcssCustomProperties({
+      importFrom: path.join(currentWorkingDir, 'src/css/config/_vars.css'),
+    }),
     autoprefixer(),
   ],
 };

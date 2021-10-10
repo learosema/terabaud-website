@@ -1,0 +1,24 @@
+/* Dark theme (default) */
+
+:root {
+  --skyblue-1: #002277;
+  --skyblue-2: #1166ff;
+  --skyblue-3: #2299ff;
+  --skyblue-4: #33ccff;
+
+  --bg-color: #111;
+  --fg-color: #f4f4f4;
+  --link-fg-color: #33aaff;
+  --link-fg-color-visited: #0099ff;
+  --link-fg-color-hover: #ffffff;
+  --link-bg-color-focus: var(--skyblue-1);
+}
+
+/* light theme */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --fg-color: #111;
+    --bg-color: #f4f4f4;
+  }
+}

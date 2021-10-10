@@ -5,9 +5,13 @@
   "main": ".eleventy.js",
   "type": "module",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "dev": "npx gulp && concurrently 'gulp watch' 'eleventy --config=.eleventy.cjs --serve --quiet'",
     "start": "npm run dev",
     "build": "cross-env NODE_ENV=production gulp && cross-env NODE_ENV=production eleventy --config=.eleventy.cjs"
+  },
+  "resolutions": {
+    "clean-css": "5.2.1"
   },
   "keywords": [],
   "author": "",
@@ -15,9 +19,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "autoprefixer": "^10.3.6",
-    "clean-css": "^5.2.0",
-    "concurrently": "^6.2.1",
+    "autoprefixer": "^10.3.7",
+    "concurrently": "^6.3.0",
     "cross-env": "^7.0.3",
     "get-google-fonts": "^1.2.2",
     "gulp": "^4.0.2",
@@ -28,11 +31,10 @@
     "html-minifier": "^4.0.0",
     "imagemin": "^8.0.1",
     "moment": "^2.29.1",
-    "postcss": "^8.3.8",
+    "postcss": "^8.3.9",
     "postcss-css-variables": "^0.18.0",
+    "postcss-custom-properties": "^12.0.0",
     "postcss-import": "^14.0.2"
   },
-  "dependencies": {
-    "modern-css-reset": "^1.4.0"
-  }
+  "dependencies": {}
 }

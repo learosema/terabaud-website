@@ -1,5 +1,3 @@
-@import 'modern-css-reset';
-
-body {
-  color: #f0f;
-}
+@import 'config/_reset.css';
+@import 'config/_vars.css';
+@import 'config/_global.css';

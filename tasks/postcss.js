@@ -33,20 +33,29 @@ const calculateOutput = ({ history }) => {
   return response;
 };
 
+const cleanCSSOptions = {
+  inline: false,
+  level: {
+    1: {
+      roundingPrecision: 'all=10,ms=10',
+    },
+  },
+};
+
+if (isProduction) {
+  Object.assign(cleanCSSOptions.level, {
+    2: {
+      all: true,
+    },
+  });
+}
+
 // The main postCSS method grabs all root postcss files,
 // processes them, then sends them to the output calculator
 const postCSS = () => {
   return src('./src/css/*.css')
     .pipe(postcss(config.plugins))
-    .pipe(
-      cleanCSS(
-        isProduction
-          ? {
-              level: 2,
-            }
-          : {}
-      )
-    )
+    .pipe(cleanCSS(cleanCSSOptions))
     .pipe(dest(calculateOutput));
 };
 
