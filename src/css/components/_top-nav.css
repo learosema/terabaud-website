@@ -1,0 +1,30 @@
+.top-nav {
+  background: var(--skyblue-1);
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.top-nav ul {
+  padding: 0;
+  margin: var(--size-500);
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+
+.top-nav li + li {
+  margin-left: var(--size-500);
+}
+
+.top-nav a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: var(--size-300);
+  border-radius: 0.5rem;
+}
+
+.top-nav a:hover {
+  background: #000;
+}

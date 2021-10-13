@@ -1,7 +1,16 @@
-node_modules
-Thumbs.db
-.DS_Store
+# Misc
 *.log
 npm-debug.*
+*.scssc
+*.log
+*.swp
+.DS_Store
+Thumbs.db
+.sass-cache
+.env
+.cache
 
+# Node modules and output
+node_modules
 public
+src/_includes/css

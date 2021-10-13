@@ -2,20 +2,39 @@
   "name": "terabaud-website",
   "version": "1.1.1",
   "description": "",
-  "main": "index.js",
+  "main": ".eleventy.js",
+  "type": "module",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
-    "predeploy": "cross-env ELEVENTY_ENV=production npm run build -s",
-    "deploy": "touch public/.nojekyll && gh-pages -d public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx npm-force-resolutions",
+    "dev": "npx gulp && concurrently 'gulp watch' 'eleventy --config=.eleventy.cjs --serve --quiet'",
+    "start": "npm run dev",
+    "build": "cross-env NODE_ENV=production gulp && cross-env NODE_ENV=production eleventy --config=.eleventy.cjs"
+  },
+  "resolutions": {
+    "clean-css": "5.2.1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "autoprefixer": "^10.3.7",
+    "concurrently": "^6.3.0",
     "cross-env": "^7.0.3",
-    "gh-pages": "^3.2.3"
-  }
+    "get-google-fonts": "^1.2.2",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-esbuild": "^0.9.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "html-minifier": "^4.0.0",
+    "imagemin": "^8.0.1",
+    "moment": "^2.29.1",
+    "postcss": "^8.3.9",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-custom-properties": "^12.0.0",
+    "postcss-import": "^14.0.2"
+  },
+  "dependencies": {}
 }

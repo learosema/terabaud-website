@@ -1,0 +1,40 @@
+/* Dark theme (default) */
+
+:root {
+  --skyblue-1: #002277;
+  --skyblue-2: #1166ff;
+  --skyblue-3: #2299ff;
+  --skyblue-4: #33ccff;
+
+  --bg-color: #111;
+  --fg-color: #f4f4f4;
+  --link-fg-color: #33aaff;
+  --link-fg-color-visited: #0099ff;
+  --link-fg-color-hover: #ffffff;
+  --link-bg-color-focus: var(--skyblue-1);
+
+  --header-bg: black;
+  --header-fg--headline: hotpink;
+  --header-fg--slogan: deeppink;
+
+  --button-bg--primary: deeppink;
+  --button-fg--primary: white;
+
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.33rem;
+  --size-600: 1.77rem;
+  --size-700: 2.36rem;
+  --size-800: 3.15rem;
+  --size-900: 4.2rem;
+  --size-major: 5.6rem;
+}
+
+/* light theme */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --fg-color: #111;
+    --bg-color: #f4f4f4;
+  }
+}

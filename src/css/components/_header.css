@@ -1,0 +1,19 @@
+.header {
+  background: var(--header-bg);
+  padding: var(--size-500);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header content {
+  flex-grow: 1;
+}
+
+.header h2 {
+  color: var(--header-fg--headline);
+}
+
+.header p {
+  color: var(--header-fg--slogan);
+}

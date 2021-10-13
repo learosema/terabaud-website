@@ -1,10 +1,11 @@
 ---
-title: Blog
-layout: article
+title: 'Blog'
+layout: feed
+pagination:
+  data: collections.blog
+  size: 5
+permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+paginationPrevText: 'Newer posts'
+paginationNextText: 'Older posts'
+paginationAnchor: '#post-list'
 ---
-
-# Blog
-
-<ul>{% for post in collections.posts %}<li>
-  <a href="{{ site.url }}{{ post.url }}">{{ post.date | date: '%Y-%m-%d' }}: {{ post.data.title }}</a>
-</li>{% endfor %}</ul>

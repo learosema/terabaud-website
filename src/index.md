@@ -1,10 +1,5 @@
 ---
-title: terabaud.de
-templateEngineOverride: njk,md
+title: "Lea's World"
+metaDesc: Welcome to Lea's world.
+layout: home
 ---
-
-# Hello World
-
-Welcome to my awesome {{ title }} site :)
-
-{% include 'wild-demo.njk' %}
