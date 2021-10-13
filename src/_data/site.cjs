@@ -1,8 +1,9 @@
 module.exports = {
-  title: "Lea's Blog",
-  slogan: 'Ramblings of a trans girl in tech',
+  name: 'terabaud.de',
   url:
     process.env.ELEVENTY_ENV === 'production'
       ? 'https://terabaud.github.io/terabaud-website'
       : '',
+  authorName: 'Lea Rosema',
+  authorEmail: 'terabaud@gmail.com',
 };

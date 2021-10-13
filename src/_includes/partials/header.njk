@@ -1,16 +1,17 @@
-<header>
-  {% include 'logo.svg' %}
-  <div class="content">
-    <h2>Lea's Blog</h2>
-    <p>{{ site.slogan }}</p>
-  </div>
-  <nav>
-    <ul>
-      {% for link in nav %}
-        <li>
-          <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+<header class="header | wrapper">
+    <a class="skip-link | button" href="#main-content">Skip to content</a>
+    {% include 'logo.svg' %}
+    <div class="content">
+      <h2>Lea's Blog</h2>
+      <p>Ramblings of a trans girl in tech</p>
+    </div>
 </header>
+<nav class="top-nav | nav wrapper">
+  <ul>
+    {% for link in nav %}
+      <li>
+        <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

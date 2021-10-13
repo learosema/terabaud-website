@@ -1,7 +1,7 @@
 [
   {"title": "Home", "url": "/"},
   {
-    "text": "About",
+    "title": "About",
     "url": "/about/"
   }
 ]

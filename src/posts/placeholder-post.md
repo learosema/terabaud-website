@@ -1,5 +1,6 @@
 ---
 title: 'Placeholder Post'
+metaDesc: 'bla...'
 date: '2021-04-22'
 tags: ['Lorem ipsum', 'Inceptos Justo', 'Pharetra Tortor']
 ---
